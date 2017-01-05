@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">TestGitHub</string>
     <string name="txtHello">สวัสดีดีดีดีดีดี</string>
+    <string name="btnJim">Detail Jim</string>
+    <string name="txtDetail">Detail</string>
+    <string name="btnMeen">Detail Meen</string>
+    <string name="btnKaew">Detail Kaew</string>
 </resources>
