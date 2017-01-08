@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
@@ -10,6 +11,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBG"
         tools:context="com.cbnuke.testgithub.MainActivity">
 
         <TextView
@@ -33,28 +35,52 @@
         <Button
             android:text="@string/btnJim"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
             android:layout_marginStart="21dp"
-            android:id="@+id/btnJim" />
+            android:background="@drawable/button_control_flat_pink"
+            android:id="@+id/btnJim"
+            android:textColor="@color/button_selector_flat_pink"
+            style="?android:attr/borderlessButtonStyle"
+
+            />
+
+
 
         <Button
             android:text="@string/btnMeen"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:id="@+id/btnMeen"
+            android:background="@drawable/button_control_raised_purple"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/button_selector"
             android:layout_below="@+id/btnJim"
             android:layout_alignStart="@+id/btnJim"
-            android:layout_marginTop="26dp" />
 
-        <Button
-            android:text="@string/btnKaew"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnMeen"
-            android:layout_alignStart="@+id/btnMeen"
-            android:layout_marginTop="25dp"
-            android:id="@+id/btnKaew" />
+            />
+
+            <Button
+        android:text="@string/btnKaew"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnMeen"
+        android:layout_alignStart="@+id/btnMeen"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_control_raised_pink"
+        android:id="@+id/btnKaew"
+        android:textColor="@color/button_selector"
+
+        />
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcherygyug"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="22dp"
+        android:id="@+id/imageView" />
     </RelativeLayout>
 </layout>
